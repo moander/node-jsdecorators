@@ -1,0 +1,46 @@
+{
+  "name": "jsdecorators",
+  "version": "0.1.0",
+  "description": "a few common js decorators bundled with the ones from core-decorators",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src -Dd lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moander/node-jsdecorators.git"
+  },
+  "author": "Morten Andersen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/moander/node-jsdecorators/issues"
+  },
+  "homepage": "https://github.com/moander/node-jsdecorators#readme",
+  "dependencies": {
+    "core-decorators": "^0.7.0"
+  },
+  "bundledDependencies": [
+    "core-decorators"
+  ],
+  "babel": {
+    "optional": [
+      "es7.decorators"
+    ]
+  },
+  "eslint": {
+    "root": true,
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "ecmaFeatures": {
+      "modules": true,
+      "jsx": true
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.25"
+  }
+}
